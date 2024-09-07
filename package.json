@@ -1,0 +1,33 @@
+{
+  "name": "Edge POC",
+  "version": "1.0.0",
+  "description": "Edge POC",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 20"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc -p tsconfig-build.json",
+    "package": "rm -f dist.zip && cd dist && zip -qq -r ../dist.zip **",
+    "test": "vitest",
+    "test:ci": "vitest run",
+    "close-event": "node -r dotenv/config -r ts-node/register scripts/close-event.ts"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "dotenv": "~16.4.5",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript-eslint": "^7.12.0",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "~20.1.4",
+    "@types/node": "~20.11.25",
+    "cross-env": "~7.0.3",
+    "ts-node": "~10.9.2",
+    "typescript": "5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "packageManager": "yarn@4.2.2+sha256.1aa43a5304405be7a7cb9cb5de7b97de9c4e8ddd3273e4dad00d6ae3eb39f0ef"
+}

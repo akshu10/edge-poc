@@ -1,0 +1,21 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*",
+    "scripts/**/*.ts",
+    "./*.cjs",
+    "./*.mjs",
+    "./*.js",
+    "./*.ts",
+    "test/**/*.ts",
+    "vite.config.mts"
+  ]
+}
