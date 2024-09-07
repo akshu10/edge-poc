@@ -11,8 +11,6 @@
   "include": [
     "src/**/*",
     "scripts/**/*.ts",
-    "./*.cjs",
-    "./*.mjs",
     "./*.js",
     "./*.ts",
     "test/**/*.ts",
