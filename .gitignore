@@ -1,0 +1,30 @@
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+node_modules/
+node_modules/
+build/
+build/
+*.key
+*.key
+*.log
+*.log
+config.local.ts
+config.local.js
+config.local.js
+package-lock.json
+package-lock.json
+docs/routes.generated.txt
+docs/routes.generated.txt
+coverage/
+coverage/
+.nyc_output/
+.nyc_output/
+# macOS
+# macOS
+.DS_Store
+.DS_Store
+.yarn/
+
+.env
+dist/
